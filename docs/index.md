@@ -3,12 +3,12 @@ layout: home
 layoutClass: 'm-home-layout'
 
 hero:
-  name: 小野
+  name: 濑户
   text: 今天天气真好
-  tagline: 我的梦想永不坠落
+  tagline: 我的理想永不坠落
   image:
     src: /logo.jpg
-    alt: 小野
+    alt: 濑户
   actions:
     - text: 前端物语
       link: /fe/es6/
@@ -44,7 +44,7 @@ features:
     link: /pit/npm
     linkText: 踩坑记录
   - icon: 💯
-    title: 吾志所向，一往无前。
+    title: 我的理想永不坠落
     details: '<small class="bottom-small">一个想躺平的小开发</small>'
     link: /wild
 ---

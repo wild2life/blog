@@ -11,7 +11,7 @@ export default defineConfig({
   base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/blog/',
 
   lang: 'zh-CN',
-  title: '野生动物',
+  title: '濑户',
   description: '我的理想永不坠落',
   head,
   lastUpdated: true,

@@ -184,7 +184,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'H5 踩坑记录', link: '/pit/h5' },
         { text: '微信开发踩坑记录', link: '/pit/wechat' },
         { text: 'Uniapp 常见问题', link: '/pit/uniapp' },
-        { text: 'Nuxt 常见问题', link: '/pit/nuxt' },
         { text: 'Vue 踩坑记录', link: '/pit/vue' },
       ]
     },

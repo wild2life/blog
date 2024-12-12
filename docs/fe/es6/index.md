@@ -159,8 +159,8 @@ fn()
 ### const 常量定义
 
 ```js
-const NAME = 'maomao'
-NAME = 'maomao1996' // 报错
+const NAME = 'wildlife'
+NAME = 'wild2life' // 报错
 ```
 
 ## 模板字符串
@@ -168,7 +168,7 @@ NAME = 'maomao1996' // 报错
 模板字符串 (template string) 是增强版的字符串，用反引号(**`**)标识。它可以当作普通字符串、定义多行字符串或者在字符串中嵌入变量、函数调用以及表达式
 
 ```js
-let name = 'maomao'
+let name = 'wildlife'
 let age = 18
 
 /* ES5 拼接字符串 */
@@ -184,7 +184,7 @@ let es6Str = `我叫: ${name}，我的年龄是: ${age + 1} 岁`
 
 ```js
 const obj = {
-  name: 'maomao',
+  name: 'wildlife',
   age: 18,
 }
 
@@ -206,7 +206,7 @@ console.log(y) // null
 ### 解构数组
 
 ```js
-const arr = ['maomao', 18]
+const arr = ['wildlife', 18]
 
 /* ES5 写法 */
 const name = arr[0]
@@ -231,13 +231,13 @@ console.log(z) // null
 字符串也可以解构赋值，因为字符串被转换成了一个类似数组的对象
 
 ```js
-const [a, b, c] = 'maomao'
+const [a, b, c] = 'wildlife'
 console.log(a) // m
 console.log(b) // a
 console.log(c) // o
 
 /* 解构 length 属性 */
-const { length } = 'maomao'
+const { length } = 'wildlife'
 console.log(length) // 6
 ```
 
@@ -305,8 +305,8 @@ function log(name, ...params) {
   console.log(name, params)
 }
 
-log('maomao', 1, 2) // maomao [1, 2]
-log('maomao', 1, 2, 3) // maomao [1, 2, 3]
+log('wildlife', 1, 2) // wildlife[1, 2]
+log('wildlife', 1, 2, 3) // wildlife[1, 2, 3]
 ```
 
 ::: tip 剩余参数(rest 参数)
@@ -423,7 +423,7 @@ const arr2 = [...arr1]
 const [...arr2] = arr1
 
 /* 拷贝对象 */
-const obj1 = { name: 'maomao' }
+const obj1 = { name: 'mawildlifeomao' }
 // 写法一
 const obj2 = { ...obj1 }
 // 写法二
@@ -439,7 +439,7 @@ const arr2 = ['a', 'b', 'c']
 const arr = [...arr1, ...arr2]
 
 /* 合并对象 */
-const obj1 = { name: 'maomao' }
+const obj1 = { name: 'wildlife' }
 const obj2 = { age: 18 }
 const obj = { ...obj1, ...obj2 }
 ```
@@ -625,9 +625,9 @@ arr.findIndex((item) => item === 9) // -1
 `at()` 方法接受一个整数(支持负数)作为参数返回对应位置的成员，如果**参数位置超出了数组范围则返回 `undefined`**
 
 ```js
-const arr = ['maomao', 18]
+const arr = ['wildlife', 18]
 
-arr.at(0) // 'maomao'
+arr.at(0) // 'wildlife'
 arr.at(-1) // 18
 arr.at(99) // undefined
 ```
@@ -671,23 +671,23 @@ arr.flatMap((x) => [[x * 2]]) // [[2], [4], [6], [8]]
 ```js
 /* 属性简写 */
 // ES5 写法
-const key = 'maomao'
+const key = 'wildlife'
 const obj = { key: key }
 
 // ES6 写法
-const key = 'maomao'
+const key = 'wildlife'
 const obj = { key }
 
 /* 方法简写 */
 // ES5 写法
 const obj = {
   log: function () {
-    console.log('maomao')
+    console.log('wildlife')
   },
 }
 
 // ES6 写法
-const key = 'maomao'
+const key = 'wildlife'
 const obj = {
   log() {},
 }
@@ -700,7 +700,7 @@ const obj = {
 ```js
 const obj = {
   f() {
-    this.name = 'maomao'
+    this.name = 'wildlife'
   },
 }
 
@@ -715,14 +715,14 @@ new obj.f() // 报错
 // 定义属性名
 const key = 'age'
 const obj = {
-  ['name' + 1]: 'maomao',
+  ['name' + 1]: 'wildlife',
   [key]: 18,
 }
 
 // 定义方法名
 const obj = {
   ['log' + 'name']() {
-    console.log('maomao')
+    console.log('wildlife')
   },
 }
 ```
@@ -738,7 +738,7 @@ const obj = { [key] }
 
 // 正确
 const key = 'name';
-const obj = { [key]: 'maomao'};
+const obj = { [key]: 'wildlife'};
 ```
 
 属性名表达式如果是一个对象会自动将其转为字符串 `[object Object]`
@@ -826,7 +826,7 @@ Object.assign(obj, null) === obj // true
 const obj = {}
 Object.assign(obj, 1, true) === obj // true
 // 字符串会以字符数组的形式做合并
-Object.assign({}, 'maomao') // {0: 'm', 1: 'a', 2: 'o', 3: 'm', 4: 'a', 5: 'o'}
+Object.assign({}, 'wildlife') // {0: 'm', 1: 'a', 2: 'o', 3: 'm', 4: 'a', 5: 'o'}
 
 /* 数组 */
 // 当参数都为数组时
@@ -894,10 +894,10 @@ toast({ content: '提示' }) // {duration: 2000, content: '提示'}
 `Object.entries()` 方法返回一个数组（二维数组），其成员为参数对象自身的（不含继承的）所有可遍历属性的键值对数组(`ES2017` 引入)
 
 ```js
-const obj = { name: 'maomao', age: 18 }
+const obj = { name: 'wildlife', age: 18 }
 Object.keys(obj) // ['name', 'age']
-Object.values(obj) //  ['maomao', 18]
-Object.entries(obj) // [['name', 'maomao'], ['age', 18]]
+Object.values(obj) //  ['wildlife', 18]
+Object.entries(obj) // [['name', 'wildlife'], ['age', 18]]
 ```
 
 ### Object.fromEntries()
@@ -905,15 +905,15 @@ Object.entries(obj) // [['name', 'maomao'], ['age', 18]]
 `Object.fromEntries()` 方法是 `Object.entries()` 的逆操作，用于将键值对的数据结构还原为对象
 
 ```js
-Object.fromEntries([['name', 'maomao']]) // {name: 'maomao'}
+Object.fromEntries([['name', 'wildlife']]) // {name: 'wildlife'}
 
 /* Map 转对象 */
-const map = new Map([['name', 'maomao']])
-Object.fromEntries(map) // {name: 'maomao'}
+const map = new Map([['name', 'wildlife']])
+Object.fromEntries(map) // {name: 'wildlife'}
 
 /* 将查询字符串转为对象 */
-const params = 'name=maomao&age=18'
-Object.fromEntries(new URLSearchParams(params)) // {name: 'maomao', age: '18'}
+const params = 'name=wildlife&age=18'
+Object.fromEntries(new URLSearchParams(params)) // {name: 'wildlife', age: '18'}
 ```
 
 ### 对象遍历方法对比
@@ -1053,20 +1053,20 @@ x ?? (x = y)
 ```js
 // util.js
 /* 单个输出 */
-export const name = 'maomao'
+export const name = 'wildlife'
 export function log() {
   console.log(name)
 }
 
 /* 统一输出 */
-const name = 'maomao'
+const name = 'wildlife'
 function log() {
   console.log(name)
 }
 export { name, log }
 
 /* 使用 as 关键字重命名 */
-const name = 'maomao'
+const name = 'wildlife'
 export { name as nickname }
 ```
 
@@ -1090,8 +1090,8 @@ import { name as nickname, log as logName } from './util'
 
 /* 模块的整体加载 */
 import * as util from './util'
-util.name // maomao
-util.log() // maomao
+util.name // wildlife
+util.log() // wildlife
 ```
 
 ### export default 命令
@@ -1101,19 +1101,19 @@ util.log() // maomao
 ```js
 /* 输出匿名函数 */
 export default function () {
-  console.log('maomao')
+  console.log('wildlife')
 }
 
 import log from './export-default'
-log() // 'maomao'
+log() // 'wildlife'
 
 /* 输出非匿名函数 */
 export default fn function () {
-  console.log('maomao')
+  console.log('wildlife')
 }
 
 import log from './export-default'
-log() // 'maomao'
+log() // 'wildlife'
 ```
 
 ::: tip export default 命令注意点
@@ -1131,7 +1131,7 @@ const a = 1;
 export default a;
 
 // 直接输出
-export default 'maomao'
+export default 'wildlife'
 export default 1 + 2
 ```
 

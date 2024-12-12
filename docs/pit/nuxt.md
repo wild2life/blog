@@ -8,7 +8,10 @@ outline: 2
 
 ```js
 npm run build
+```
+
 # 打包 把打包的东西放到服务器上 整个的生成是通过在**浏览器执行 js **
+
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/292785/1636943800402-17b66feb-fd06-4d1a-8ef0-304733271d6c.png#clientId=u85b1f32b-b9e4-4&from=paste&height=1116&id=ud5687010&name=image.png&originHeight=1116&originWidth=2208&originalType=binary&ratio=1&rotation=0&showTitle=false&size=424226&status=done&style=none&taskId=ueab5097e-b425-4a3f-ab11-a920fd8b1fa&title=&width=2208)
 
 ### ssr 服务端渲染
@@ -142,6 +145,6 @@ sass-loader > 10 不支持 vue2.0
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/292785/1650453007623-4c33d334-7bca-4e84-a17e-623bc36c025a.png#clientId=u75d33a12-5762-4&from=paste&height=1314&id=ub5da26aa&name=image.png&originHeight=1314&originWidth=1612&originalType=binary&ratio=1&rotation=0&showTitle=false&size=587069&status=done&style=none&taskId=ud3975e5e-6f81-49ad-9442-e2e7838f646&title=&width=1612)
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/292785/1647318629137-171ec8a4-f4cd-472a-a6a7-14e475a90a39.png#clientId=uc84be5f8-8167-4&from=paste&height=387&id=uf5c63ff9&name=image.png&originHeight=774&originWidth=1214&originalType=binary&ratio=1&rotation=0&showTitle=false&size=285316&status=done&style=none&taskId=uc8800df3-081b-4b60-b2c8-518144c4d02&title=&width=607)
 
-
+```
 
 ```

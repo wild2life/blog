@@ -39,6 +39,12 @@ export const NAV_DATA: NavData[] = [
         desc: 'JSON 在线解析及格式化验证',
         link: 'https://www.json.cn',
       },
+      {
+        icon: '/icons/json-cn.ico',
+        title: 'Transform tools',
+        desc: 'JSON 转换器',
+        link: 'https://transform.tools/json-to-typescript'
+      }
     ],
   },
   {
@@ -72,8 +78,8 @@ export const NAV_DATA: NavData[] = [
       {
         icon: '/logo.jpg',
         title: '前端日常笔记',
-        desc: '日常笔记记录（零零散散啥都记系列）',
-        link: 'https://github.com/wild2life/blog',
+        desc: '日常笔记记录',
+        link: 'https://github.com/wild2life/daily-notes',
       },
       // {
       //   icon: '/logo.jpg',
