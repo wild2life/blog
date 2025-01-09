@@ -26,6 +26,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       collapsed: false,
       items: [
         { text: '基础知识', link: '/fe/typescript/base' },
+        { text: '工具类型', link: '/fe/typescript/utility-types' },
+        { text: '三斜线指令', link: '/fe/typescript/triple-slash-directives' },
         { text: '编译配置', link: '/fe/typescript/tsconfig' },
         { text: '类型体操', link: '/fe/typescript/challenges' }
       ],
@@ -39,7 +41,12 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'CSS 理论知识点', link: '/fe/css/' }
       ]
     },
-    { text: ' Webpack', link: '/fe/webpack/' },
+    {text: '工程化', items: [
+      { text: ' Monorepo', link: '/fe/monorepo/' },
+      { text: ' Rollup', link: '/fe/rollup/' },
+      { text: ' Webpack', link: '/fe/webpack/' },
+    ]},
+   
     {
       text: '浏览器与网络',
       collapsed: false,
@@ -72,6 +79,82 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: 'React',
       items: [
         { text: 'React 18 的新特性', link: '/analysis/react/18' },
+        { text: 'React-18.2.0 源码解析', 
+          items: [
+            { text: '基础知识',
+              items: [
+              {
+                text: 'React 设计理念与架构',
+                link: '/analysis/react/18.2.0/base/idea'
+              },
+              {
+                text: 'Fiber 架构和双缓存',
+                link: '/analysis/react/18.2.0/base/fiber'
+              },
+              {
+                text: '源码文件结构',
+                link: '/analysis/react/18.2.0/base/file'
+              },
+
+              {
+                text: '启动模式和渲染流程',
+                link: '/analysis/react/18.2.0/base/mode-process'
+              },
+              {
+                text: 'Virtual DOM',
+                link: '/analysis/react/18.2.0/base/virtual-dom'
+              },
+              {
+                text: 'JSX',
+                link: '/analysis/react/18.2.0/base/jsx'
+              }
+            ] },
+            { text: '渲染流程', items: [
+              {
+                text: '初始化阶段',
+                link: '/analysis/react/18.2.0/process/init'
+              },
+              {
+                text: 'render 阶段',
+                items: [
+                  {
+                    text: 'schedule-update-on-fiber',
+                    link: '/analysis/react/18.2.0/process/schedule-update-on-fiber'
+                  },
+                  {
+                    text: 'begin-work',
+                    link: '/analysis/react/18.2.0/process/begin-work'
+                  },
+                  {
+                    text: 'complete-work',
+                    link: '/analysis/react/18.2.0/process/complete-work'
+                  }
+                ]
+              },
+              {
+                text: 'commit 阶段',
+                items: [
+                  {
+                    text: 'commit-root',
+                    link: '/analysis/react/18.2.0/process/commit-root'
+                  },
+                  {
+                    text: 'before mutation 阶段',
+                    link: '/analysis/react/18.2.0/process/commit-before-mutation-effects'
+                  },
+                  {
+                    text: 'mutation 阶段',
+                    link: '/analysis/react/18.2.0/process/commit-mutation-effects'
+                  },
+                  {
+                    text: 'layout 阶段',
+                    link: '/analysis/react/18.2.0/process/commit-layout-effects'
+                  }
+                ]
+              }
+            ] },
+          ]
+        },
         { text: 'React 常见面试题', link: '/analysis/react/interview' }
       ]
     },

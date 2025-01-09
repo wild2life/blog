@@ -704,7 +704,7 @@ const animal: Bird & Fish = {
 **字符串字面量类型**：
 
 ```ts
-type Name = 'wildlife' | 'wildlife1996'
+type Name = 'wildlife' | 'wild2life'
 ```
 
 **数字字面量类型**：

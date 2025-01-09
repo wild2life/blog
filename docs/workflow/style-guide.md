@@ -205,5 +205,5 @@ echo "module.exports = require('@femm/prettier')" > .prettierrc.cjs
 :::
 
 - [VSCode 配置 Prettier 插件](/efficiency/software/vscode#推荐配置)
-- [@femm/prettier | GitHub](https://github.com/wildlife1996/femm/tree/main/packages/prettier)
+- [@femm/prettier | GitHub](https://github.com/wild2life/femm/tree/main/packages/prettier)
 - [Options | Prettier](https://prettier.io/docs/en/options.html)

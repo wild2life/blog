@@ -92,8 +92,8 @@ instance1.colors.push('black')
 console.log('instance1', instance1.name) // 'wildlife'
 console.log('instance1', instance1.colors) // ['red', 'blue', 'green', 'black']
 
-const instance2 = new SubType('wildlife1996')
-console.log('instance2', instance2.name) // 'wildlife1996'
+const instance2 = new SubType('wild2life')
+console.log('instance2', instance2.name) // 'wild2life'
 console.log('instance2', instance2.colors) // ['red', 'blue', 'green']
 
 console.log(instance1.log === instance2.log) // false
@@ -140,9 +140,9 @@ console.log('instance1', instance1.colors) // ['red', 'blue', 'green', 'black']
 instance1.sayName() // 'wildlife'
 instance1.sayAge() // 18
 
-const instance2 = new SubType('wildlife1996', 27)
+const instance2 = new SubType('wild2life', 27)
 console.log('instance2', instance2.colors) // ['red', 'blue', 'green']
-instance2.sayName() // 'wildlife1996'
+instance2.sayName() // 'wild2life'
 instance2.sayAge() // 27
 ```
 
@@ -185,7 +185,7 @@ instance1.name = 'wildlife'
 instance1.colors.push('black')
 
 const instance2 = Object.create(person)
-instance2.name = 'wildlife1996'
+instance2.name = 'wild2life'
 instance2.colors.push('white')
 console.log(person.colors) // ['red', 'blue', 'green', 'black', 'white']
 ```
@@ -286,7 +286,7 @@ SubType.prototype.sayAge = function () {
 const instance1 = new SubType('wildlife', 18)
 instance1.colors.push('a') // ['red', 'blue', 'green', 'a']
 
-const instance2 = new SubType('wildlife1996', 27)
+const instance2 = new SubType('wild2life', 27)
 instance2.colors.push('A') // ['red', 'blue', 'green', 'A']
 ```
 

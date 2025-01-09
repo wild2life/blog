@@ -11,7 +11,7 @@
 - [Git 配置多个 SSH-Key](https://gitee.com/help/articles/4229)
 - 下载相关
   - [Windows 版下载镜像](https://npmmirror.com/mirrors/git-for-windows/)
-  - [使用 jsdelivr 加速 Github 仓库资源](https://github.com/wildlife1996/daily-notes/issues/7)
+  - [使用 jsdelivr 加速 Github 仓库资源](https://github.com/wild2life/daily-notes/issues/7)
 - [commit 常用的 type](/workflow/style-guide#commit-常用的-type)
 
 :::
@@ -392,19 +392,19 @@ git log -1 --diff-filter=A --follow --pretty="%ci" "./docs/index.md"
 ## 本地不同分支关联不同的远程仓库
 
 ::: tip
-以茂茂的 [mm-notes](https://github.com/wildlife1996/mm-notes) 和 [daily-notes](http://github.com/wildlife1996/daily-notes) 仓库为例
+以茂茂的 [mm-notes](https://github.com/wild2life/mm-notes) 和 [daily-notes](http://github.com/wild2life/daily-notes) 仓库为例
 :::
 
 1. `clone` 仓库 `mm-notes`（默认的 `remote` 为 `origin`）
 
 ```sh
-git clone https://github.com/wildlife1996/mm-notes
+git clone https://github.com/wild2life/mm-notes
 ```
 
 2. 添加远程仓库 `daily-notes`（`remote` 取名为 `daily-notes`）
 
 ```sh
-git remote add daily-notes http://github.com/wildlife1996/daily-notes
+git remote add daily-notes http://github.com/wild2life/daily-notes
 ```
 
 3. 拉取 `daily-notes` 的 `master` 分支到本地（本地分支名为 `notes`）

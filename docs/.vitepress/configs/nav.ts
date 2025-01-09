@@ -11,12 +11,20 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         items: [
           { text: 'TypeScript 基础知识', link: '/fe/typescript/base' },
-          { text: '编译配置', link: '/fe/typescript/tsconfig' },
+          { text: 'TypeScript 工具类型', link: '/fe/typescript/utility-types' },
+          { text: 'TypeScript 编译配置', link: '/fe/typescript/tsconfig' },
           { text: 'TypeScript 类型体操', link: '/fe/typescript/challenges' },
         ],
       },
-      { text: 'Webpack', link: '/fe/webpack/' },
-      { text: '浏览器相关知识', link: '/fe/browser/' },
+      {
+        items: [
+          { text: 'Monorepo', link: '/fe/monorepo/' },
+          { text: 'Rollup', link: '/fe/rollup/' },
+          { text: 'Webpack 理论知识', link: '/fe/webpack/' },
+    
+        ]
+      },
+      { text: '浏览器', link: '/fe/browser/' },
       { text: '编程题', link: '/fe/coding/' },
     ],
     activeMatch: '^/fe',
@@ -24,13 +32,22 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '源码阅读',
     items: [
-      { text: 'React 18.2.0', link: '/analysis/react/18' },
+      { text: 'React 18.2.0', link: '/analysis/react/18.2.0/base/idea' },
       {
         text: 'Vue',
         link: '/analysis/vue/way'
       },
       {
-        text: 'CLI',
+        text:'CLI',
+        items: [
+          {
+            text: 'create-vue',
+            link: '/analysis/cli/create-vue'
+          }
+        ]
+      },
+      {
+        text: 'Utils',
         items: [
           { text: 'only-allow', link: '/analysis/utils/only-allow' },
           { text: 'clsx', link: '/analysis/utils/clsx' },
