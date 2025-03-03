@@ -66,7 +66,6 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         // text: '常用工具/方法',
         items: [
-          { text: 'React', link: '/analysis/react/18' },
           { text: '常用正则整理', link: '/workflow/utils/regexp' },
           { text: '常用代码片段', link: '/workflow/utils/snippets' },
         ],

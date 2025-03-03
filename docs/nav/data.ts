@@ -56,6 +56,11 @@ export const NAV_DATA: NavData[] = [
         link: 'https://chat.openai.com/chat',
       },
       {
+        icon: '/icons/deepseek.svg',
+        title: 'Deepseek',
+        link: 'https://chat.deepseek.com/',
+      },
+      {
         icon: 'https://www.notion.so/images/logo-ios.png',
         title: 'Notion AI（笔记）',
         link: 'https://www.notion.so',

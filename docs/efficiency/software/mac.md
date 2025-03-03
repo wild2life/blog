@@ -41,6 +41,28 @@ sudo spctl --master-disable
 
 然后去『`系统设置 > 安全性与隐私 > 安全性 > 任何来源`』打开
 
+### 提示已损坏/无法确认开发者身份
+
+开启『任何来源』后，还是有部分软件在安装后会提示『已损坏』或『无法确认开发者身份』，需要使用 `xattr` 命令绕过
+
+```sh
+sudo xattr -d com.apple.quarantine /Applications/[应用名称].app
+# 举个 🌰
+sudo xattr -d com.apple.quarantine /Application
+```
+
+### 开发者工具
+
+> 允许下面不满足系统安全性策略的应用程序在本地运行软件。
+
+打开『`系统设置 > 安全性与隐私 > 开发者工具`』根据需要添加如下应用：
+
+- `终端`
+- `iTerm`
+- `Visual Studio Code`
+
+[苹果：为了安全让 M2 吃灰 | 程序员的喵](https://catcoding.me/p/apple-perf/)
+
 ## Xcode Command Line Tools
 
 ```sh
@@ -57,8 +79,11 @@ Mac 的软件包管理工具，用于安装、卸载和管理各种软件，包�
 
 安装
 
+> 条件许可下优先使用官方源安装
+
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# 官方源安装
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # 国内源完整版安装
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
@@ -273,6 +298,29 @@ duti -s com.microsoft.VSCode .wxss all
 # PDF 还是浏览器快，WPS 有点卡
 duti -s com.google.Chrome .pdf all
 ```
+
+::: tip 获取应用程序的 ID
+
+> **使用命令行**
+
+```sh
+# 获取应用程序的 ID （用 Chrome 举 🌰）
+mdls -name kMDItemCFBundleIdentifier /Applications/Google\ Chrome.app
+# 输出 kMDItemCFBundleIdentifier = "com.google.Chrome"
+
+```
+
+> **使用访达**
+
+1. 打开 `访达`
+2. 点击 `应用程序`
+3. 右键 `应用程序`，如 `微信`
+4. 点击 `显示包内容`
+5. 打开 `Contents` 文件夹
+6. 打开 `Info.plist` 文件
+7. 找到 `CFBundleIdentifier` 字段对应的值
+
+:::
 
 [duti | Github](https://github.com/moretension/duti)
 
