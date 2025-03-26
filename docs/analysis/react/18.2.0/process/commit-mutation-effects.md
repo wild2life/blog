@@ -11,7 +11,7 @@
 
 ```
 
-> 源码地址 [commitMutationEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L2036)
+> 源码地址 [commitMutationEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L2036)
 
 ```ts
 
@@ -38,7 +38,7 @@
 *   处理 **Ref** 副作用（卸载 Ref）
 *   处理 **ContentReset** 副作用（重置文本内容）
 
-> 源码地址 [commitMutationEffectsOnFiber() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L2083)
+> 源码地址 [commitMutationEffectsOnFiber() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L2083)
 
 ```ts
 
@@ -252,7 +252,7 @@
 *   调用 `commitDeletionEffects` 函数处理 **Deletion** 副作用（删除）
 *   调用 `commitMutationEffectsOnFiber` 函数处理 **Mutation** 副作用（插入、更新、删除、Ref 等）
 
-> 源码地址 [recursivelyTraverseMutationEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L2052)
+> 源码地址 [recursivelyTraverseMutationEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L2052)
 
 ```ts
 
@@ -285,7 +285,7 @@
 ```
 ### `commitDeletionEffects` [​](#commitdeletioneffects)
 
-> 源码地址 [commitDeletionEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L1608)
+> 源码地址 [commitDeletionEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L1608)
 
 ```ts
 
@@ -352,7 +352,7 @@
 
 ### `commitDeletionEffectsOnFiber` [​](#commitdeletioneffectsonfiber)
 
-> 源码地址 [commitDeletionEffectsOnFiber() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L1683)
+> 源码地址 [commitDeletionEffectsOnFiber() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L1683)
 
 ```ts
 
@@ -492,7 +492,7 @@
 
 对子 Fiber 树进行遍历，并调用 `commitDeletionEffectsOnFiber` 函数处理 **Deletion** 副作用（删除）
 
-> 源码地址 [recursivelyTraverseDeletionEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L1670)
+> 源码地址 [recursivelyTraverseDeletionEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L1670)
 
 ```ts
 
@@ -510,7 +510,7 @@
 
 `commitReconciliationEffects` 函数用于处理 **Placement** 副作用（插入）
 
-> 源码地址 [commitReconciliationEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L2437)
+> 源码地址 [commitReconciliationEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L2437)
 
 ```ts
 
@@ -542,7 +542,7 @@
 
 ### `commitPlacement` [​](#commitplacement)
 
-> 源码地址 [commitPlacement() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L1498)
+> 源码地址 [commitPlacement() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L1498)
 
 ```ts
 

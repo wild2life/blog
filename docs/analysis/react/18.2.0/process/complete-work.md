@@ -14,7 +14,7 @@
 
 `completeUnitOfWork` 函数的作用是执行当前 Fiber 节点的 `completeWork` 逻辑，然后将 `workInProgress` 赋值为当前节点的兄弟节点或父节点
 
-> 源码地址 [completeUnitOfWork | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1859)
+> 源码地址 [completeUnitOfWork | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1859)
 
 ``` ts
 
@@ -76,7 +76,7 @@
 
 类似 `beginWork`，`completeWork` 也是根据 `fiber.tag` 来调用不同的处理逻辑（重点分析 `HostComponent` 的逻辑）
 
-> 源码地址 [completeWork | react-reconciler/src/ReactFiberCompleteWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCompleteWork.old.js#L849)
+> 源码地址 [completeWork | react-reconciler/src/ReactFiberCompleteWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCompleteWork.old.js#L849)
 
 ``` ts
 
@@ -221,7 +221,7 @@
 
 `createInstance` 函数的作用是为 Fiber 节点创建对应的 DOM 节点
 
-> 源码地址 [createInstance | react-dom/src/client/ReactDOMHostConfig.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMHostConfig.js#L243)
+> 源码地址 [createInstance | react-dom/src/client/ReactDOMHostConfig.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMHostConfig.js#L243)
 
 ``` ts
 
@@ -252,7 +252,7 @@
 
 `appendAllChildren` 函数会遍历传入的 `workInProgress` 的子节点，并将这些子节点的 `stateNode` 插入到父节点中
 
-> 源码地址 [appendAllChildren | react-reconciler/src/ReactFiberCompleteWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCompleteWork.old.js#L214)
+> 源码地址 [appendAllChildren | react-reconciler/src/ReactFiberCompleteWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCompleteWork.old.js#L214)
 
 ``` ts
 
@@ -307,7 +307,7 @@
 
 `finalizeInitialChildren` 函数会调用 `setInitialProperties` 来进行属性和事件的设置，然后根据 DOM 节点的类型来判断是否需要聚焦
 
-> 源码地址 [finalizeInitialChildren | react-dom/src/client/ReactDOMHostConfig.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMHostConfig.js#L288)
+> 源码地址 [finalizeInitialChildren | react-dom/src/client/ReactDOMHostConfig.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMHostConfig.js#L288)
 
 ``` ts
 
@@ -340,7 +340,7 @@
 
 `setInitialProperties` 函数用于设置 DOM 节点的属性以及事件监听
 
-> [源码地址 setInitialProperties | react-dom/src/client/ReactDOMComponent.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMComponent.js#L486)
+> [源码地址 setInitialProperties | react-dom/src/client/ReactDOMComponent.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMComponent.js#L486)
 
 ``` ts
 
@@ -398,7 +398,7 @@
 
 ### `updateHostComponent` [​](#updatehostcomponent)
 
-> 源码地址 [updateHostComponent | react-reconciler/src/ReactFiberCompleteWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCompleteWork.old.js#L252)
+> 源码地址 [updateHostComponent | react-reconciler/src/ReactFiberCompleteWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCompleteWork.old.js#L252)
 
 ``` ts
 

@@ -96,7 +96,7 @@ React 16 架构可以分为三层：
     }
 
 ```
-> 源码地址 [workLoopConcurrent | ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1824)
+> 源码地址 [workLoopConcurrent | ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1824)
 
 在 React16 中，Reconciler 与 Renderer 不再是交替工作。当 Scheduler 将任务交给 Reconciler 后，Reconciler 会为变化的虚拟 DOM 打上代表增/删/更新的标记，类似这样：
 

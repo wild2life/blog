@@ -29,7 +29,7 @@ Fiber 的数据结构 [​](#fiber-的数据结构)
 
 Fiber 上主要有 DOM、Fiber 树、状态数据、副作用四种标识
 
-> 源码地址 [function FiberNode | ReactFiber.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiber.old.js#L118)
+> 源码地址 [function FiberNode | ReactFiber.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiber.old.js#L118)
 
 ```ts
 

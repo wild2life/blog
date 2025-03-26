@@ -45,6 +45,7 @@ description: '收录一些能提升使用体验的浏览器扩展、油猴脚本
 - [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) 网站性能测评工具
 - [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) `JSON` 格式化
 - [掘金](https://chrome.google.com/webstore/detail/%E6%8E%98%E9%87%91/lecdifefmmfjnjjinhaennhdlmcaeeeb) 在新标签页展示聚合内容，包含前端、Android、iOS、后端、产品、设计六大频道，每个频道内都有一到多个内容源
+- [Console Importer](https://chromewebstore.google.com/detail/console-importer/hgajpakhafplebkdljleajgbpdmplhie) 在控制台调试第三方库API, 比如Dayjs
 
 ## GitHub 相关
 
@@ -54,6 +55,7 @@ description: '收录一些能提升使用体验的浏览器扩展、油猴脚本
 - [File Icon for GitHub and GitLab](https://chrome.google.com/webstore/detail/file-icon-for-github-and/ficfmibkjjnpogdcfhfokmihanoldbfe) 文件 `icon` 美化
 - [Github Hovercard](https://chrome.google.com/webstore/detail/github-hovercard/mmoahbbnojgkclgceahhakhnccimnplk) GitHub 的悬浮卡，可快速浏览量用户/仓库/问题/提交信息
 - [Enhanced GitHub](https://chrome.google.com/webstore/detail/enhanced-github/anlikcnbgdeidpacdbdljnabclhahhmd) 显示仓库大小、每个文件的大小、下载链接和复制文件内容的选项
+- [GitHub Authenticator](https://chromewebstore.google.com/detail/%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E5%99%A8/bhghoamapcdpbohphigoooaddinpkbai?pli=1) 身份验证器用以在浏览器中生成二步认证代码
 
 ## 油猴
 

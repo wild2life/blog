@@ -9,7 +9,7 @@
 
 ![scheduleUpdateOnFiber](../../images/react-18/scheduleUpdateOnFiber.svg)
 
-> 源码地址 [scheduleUpdateOnFiber | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L528)
+> 源码地址 [scheduleUpdateOnFiber | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L528)
 
 ```ts
 
@@ -60,7 +60,7 @@
 这两个函数的作用是执行 `render` 阶段和 `commit` 阶段
 
 ::: 
-> 源码地址 [ensureRootIsScheduled | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L691)
+> 源码地址 [ensureRootIsScheduled | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L691)
 
 ```ts
 
@@ -177,7 +177,7 @@
 
 在 `sync` 同步模式下会执行 `performSyncWorkOnRoot`
 
-> 源码地址 [performSyncWorkOnRoot | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1224)
+> 源码地址 [performSyncWorkOnRoot | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1224)
 
 ```ts
 
@@ -247,7 +247,7 @@
 
 在 `concurrent` 并发模式下会执行 `performConcurrentWorkOnRoot`
 
-> 源码地址 [performConcurrentWorkOnRoot | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L824)
+> 源码地址 [performConcurrentWorkOnRoot | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L824)
 
 ```ts
 
@@ -381,7 +381,7 @@
 `renderRootSync` [​](#renderrootsync)
 -------------------------------------
 
-> 源码地址 [renderRootSync | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1658)
+> 源码地址 [renderRootSync | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1658)
 
 ```ts
 
@@ -465,7 +465,7 @@
 
 `renderRootConcurrent` 和 `renderRootSync` 大体逻辑一致
 
-> 源码地址 [renderRootConcurrent | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1743)
+> 源码地址 [renderRootConcurrent | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1743)
 
 ```ts
 
@@ -549,7 +549,7 @@
 
 `workLoopSync` 函数会一直执行 `performUnitOfWork` 函数，直到 `workInProgress === null`，表示没有正在进行的渲染
 
-> 源码地址 [workLoopSync | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1738)
+> 源码地址 [workLoopSync | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1738)
 
 ```ts
 
@@ -567,7 +567,7 @@
 
 `shouldYield` 函数会判断当前是否有剩余时间，如果没有剩余时间，就会返回 `true` 表示需要中断当前任务
 
-> 源码地址 [workLoopConcurrent | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1824)
+> 源码地址 [workLoopConcurrent | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1824)
 
 ```ts
 
@@ -591,7 +591,7 @@
     *   调用 `completeWork` 函数对创建好的 `Fiber 节点` 进行处理
 *   更新 `workInProgress` 指针，指向下一个 `Fiber 节点`
 
-> 源码地址 [performUnitOfWork | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1831)
+> 源码地址 [performUnitOfWork | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1831)
 
 ```ts
 

@@ -33,7 +33,7 @@
 
 ### `createRoot` [​](#createroot)
 
-> 源码地址 [createRoot | react-dom/src/client/ReactDOMRoot.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMRoot.js#L166)
+> 源码地址 [createRoot | react-dom/src/client/ReactDOMRoot.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMRoot.js#L166)
 
 ```ts
 
@@ -111,7 +111,7 @@
 
 ### `createContainer` [​](#createcontainer)
 
-> 源码地址 [createContainer | react-reconciler/src/ReactFiberReconciler.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberReconciler.old.js#L247)
+> 源码地址 [createContainer | react-reconciler/src/ReactFiberReconciler.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberReconciler.old.js#L247)
 
 ```ts
 
@@ -144,7 +144,7 @@
 
 ### `createFiberRoot` [​](#createfiberroot)
 
-> 源码地址 [createFiberRoot | react-reconciler/src/ReactFiberRoot.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberRoot.old.js#L132)
+> 源码地址 [createFiberRoot | react-reconciler/src/ReactFiberRoot.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberRoot.old.js#L132)
 
 ```ts
 
@@ -230,7 +230,7 @@
 
 当初始化工作完成以后，会调用 `updateContainer` 开启更新
 
-> 源码地址 [ReactDOMRoot.prototype.render | react-dom/src/client/ReactDOMRoot.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMRoot.js#L92)
+> 源码地址 [ReactDOMRoot.prototype.render | react-dom/src/client/ReactDOMRoot.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMRoot.js#L92)
 
 ```ts
 
@@ -252,7 +252,7 @@
 2.  将 `update` 对象添加到 `fiber` 的 `updateQueue` 中
 3.  调用 `scheduleUpdateOnFiber` 开启更新
 
-> 源码地址 [updateContainer | react-reconciler/src/ReactFiberReconciler.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberReconciler.old.js#L321)
+> 源码地址 [updateContainer | react-reconciler/src/ReactFiberReconciler.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberReconciler.old.js#L321)
 
 ```ts
 

@@ -17,7 +17,7 @@
 
 ``` 
 
-> 源码地址 [commitBeforeMutationEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L321)
+> 源码地址 [commitBeforeMutationEffects() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L321)
 
 ```ts
 
@@ -45,7 +45,7 @@
 `commitBeforeMutationEffects_begin` [​](#commitbeforemutationeffects-begin)
 ---------------------------------------------------------------------------
 
-> 源码地址 [commitBeforeMutationEffects\_begin() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L338)
+> 源码地址 [commitBeforeMutationEffects\_begin() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L338)
 
 ```ts
 
@@ -92,7 +92,7 @@
 `commitBeforeMutationEffects_complete` [​](#commitbeforemutationeffects-complete)
 ---------------------------------------------------------------------------------
 
-> 源码地址 [commitBeforeMutationEffects\_complete() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L368)
+> 源码地址 [commitBeforeMutationEffects\_complete() | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L368)
 
 ```ts
 
@@ -131,7 +131,7 @@
 1.  执行类组件 `getSnapshotBeforeUpdate` 生命周期函数
 2.  对 `rootFiber` 的容器进行清空操作
 
-> 源码地址 [commitBeforeMutationEffectsOnFiber | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L390)
+> 源码地址 [commitBeforeMutationEffectsOnFiber | react-reconciler/src/ReactFiberCommitWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberCommitWork.old.js#L390)
 
 ```ts
 

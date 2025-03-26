@@ -14,7 +14,7 @@
 
 `commitRoot` 函数会做一些准备工作，然后调用 `commitRootImpl` 函数完成更新的提交
 
-> 源码地址 [commitRoot | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1958)
+> 源码地址 [commitRoot | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1958)
 
 ```ts
 
@@ -61,7 +61,7 @@
 
 同时在 [**before mutation 阶段之前**](#before-mutation-阶段之前) 和 [**layout 阶段之后**](#layput-阶段之后) 还有一些额外的操作，涉及到比如 `useEffect` 的触发、优先级相关的重置、`ref` 的绑定/解绑等
 
-> 源码地址 [commitRootImpl | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1958)
+> 源码地址 [commitRootImpl | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L1958)
 
 各个阶段的大致划分如下：
 
@@ -122,7 +122,7 @@
 
 ### before mutation 阶段之前 [​](#before-mutation-阶段之前)
 
-`commitRootImpl` 函数中直到 [`if (subtreeHasEffects || rootHasEffect)` 判断](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L2115)之前都属于 **before mutation 阶段之前**
+`commitRootImpl` 函数中直到 [`if (subtreeHasEffects || rootHasEffect)` 判断](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L2115)之前都属于 **before mutation 阶段之前**
 
 ```ts
 
@@ -242,7 +242,7 @@
 
 `flushPassiveEffects` 是处理 `passive effect` 的入口函数
 
-> 源码地址 [flushPassiveEffects | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L2356)
+> 源码地址 [flushPassiveEffects | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L2356)
 
 ```ts
 
@@ -297,7 +297,7 @@
 
 `flushPassiveEffectsImpl` 函数是处理 `passive effect` 的主要函数
 
-> 源码地址 [flushPassiveEffectsImpl | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L2408)
+> 源码地址 [flushPassiveEffectsImpl | react-reconciler/src/ReactFiberWorkLoop.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberWorkLoop.old.js#L2408)
 
 ```ts
 

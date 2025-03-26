@@ -12,7 +12,7 @@
 `beginWork` 的入参 [​](#beginwork-的入参)
 -----------------------------------
 
-> 源码地址 [beginWork | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L3685)
+> 源码地址 [beginWork | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L3685)
 
 ```ts
 
@@ -163,7 +163,7 @@
 
 React 中的节点类型定义如下：
 
-> 源码地址 [react-reconciler/src/ReactWorkTags.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactWorkTags.js#L38)
+> 源码地址 [react-reconciler/src/ReactWorkTags.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactWorkTags.js#L38)
 
 ```ts
 
@@ -198,7 +198,7 @@ React 中的节点类型定义如下：
 
 `updateHostComponent` 函数用于处理普通 DOM 标签
 
-> 源码地址 [updateHostComponent | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L1426)
+> 源码地址 [updateHostComponent | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L1426)
 
 ```ts
 
@@ -235,7 +235,7 @@ React 中的节点类型定义如下：
 
 ### `shouldSetTextContent` [​](#shouldsettextcontent)
 
-> 源码地址 [shouldSetTextContent | react-dom/src/client/ReactDOMHostConfig.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMHostConfig.js#L341)
+> 源码地址 [shouldSetTextContent | react-dom/src/client/ReactDOMHostConfig.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-dom/src/client/ReactDOMHostConfig.js#L341)
 
 ```ts
 
@@ -256,7 +256,7 @@ React 中的节点类型定义如下：
 `attemptEarlyBailoutIfNoScheduledUpdate` [​](#attemptearlybailoutifnoscheduledupdate)
 -------------------------------------------------------------------------------------
 
-> 源码地址 [attemptEarlyBailoutIfNoScheduledUpdate | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L3477)
+> 源码地址 [attemptEarlyBailoutIfNoScheduledUpdate | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L3477)
 
 ```ts
 
@@ -300,7 +300,7 @@ React 中的节点类型定义如下：
 
 ### `bailoutOnAlreadyFinishedWork` [​](#bailoutonalreadyfinishedwork)
 
-> 源码地址 [bailoutOnAlreadyFinishedWork | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L3351)
+> 源码地址 [bailoutOnAlreadyFinishedWork | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L3351)
 
 ```ts
 
@@ -345,7 +345,7 @@ React 中的节点类型定义如下：
 
 `reconcileChildren` 函数用于创建或更新 `Fiber 树`，会根据 `current === null` 的结果执行不同的逻辑
 
-> 源码地址 [reconcileChildren | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L288)
+> 源码地址 [reconcileChildren | react-reconciler/src/ReactFiberBeginWork.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactFiberBeginWork.old.js#L288)
 
 ```ts
 
@@ -402,7 +402,7 @@ React 中的节点类型定义如下：
 
 `ChildReconciler` 中定义了大量如 `deleteXXX`、`placeXXX`、`updateXXX`、`reconcileXXX` 的函数，这些函数覆盖了对 `Fiber 节点` 的创建、增加、删除、修改等操作，而这些函数将直接或间接地被 `reconcileChildFibers` 所调用
 
-> 源码地址 [ChildReconciler | react-reconciler/src/ReactChildFiber.old.js](https://github.com/maomao1996/code-analysis/blob/c0b1b3529c628ba6b2b81bdbc6d212f666b2f20f/react-v18.2.0/src/react/packages/react-reconciler/src/ReactChildFiber.old.js#L265)
+> 源码地址 [ChildReconciler | react-reconciler/src/ReactChildFiber.old.js](https://github.com/wild2life/code-analysis/blob/f0dc66687fe470217252ef38ae4f0697dc2fc15d/react-v18.2.0/src/react/packages/react-reconciler/src/ReactChildFiber.old.js#L265)
 
 ```ts
 

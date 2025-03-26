@@ -64,6 +64,10 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/workflow/style-guide',
       },
       {
+        text: '开发小技巧',
+        link: '/workflow/tricks/index'
+      },
+      {
         // text: '常用工具/方法',
         items: [
           { text: '常用正则整理', link: '/workflow/utils/regexp' },
@@ -114,13 +118,18 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: '踩坑记录',
         items: [
+          { text: 'JavaScript 踩坑记录', link: '/pit/javascript' },
+          { text: 'TypeScript 踩坑记录', link: '/pit/typescript' },
+          { text: 'CSS 踩坑记录', link: '/pit/css' },
           { text: 'Npm 踩坑记录', link: '/pit/npm' },
           { text: '第三方库踩坑记录', link: '/pit/library' },
           { text: 'PC 踩坑记录', link: '/pit/pc' },
           { text: 'H5 踩坑记录', link: '/pit/h5' },
           { text: '微信开发踩坑记录', link: '/pit/wechat' },
-          { text: 'Uniapp 常见问题', link: '/pit/uniapp' },
-          { text: 'Vue 常见问题', link: '/pit/vue' },
+          { text: '浏览器踩坑记录', link: '/pit/browser' },
+          { text: '编辑器踩坑记录', link: '/pit/editor' },
+          { text: 'Uniapp 踩坑记录', link: '/pit/uniapp' },
+          { text: 'Vue 踩坑记录', link: '/pit/vue' },
         ],
       },
     ],
@@ -135,6 +144,7 @@ export const nav: DefaultTheme.Config['nav'] = [
           { text: '多平台软件', link: '/efficiency/software/cross-platform' },
           { text: 'Mac 平台', link: '/efficiency/software/mac' },
           { text: 'Windows 平台', link: '/efficiency/software/windows' },
+          { text: 'Android 平台', link: '/efficiency/software/android' },
           { text: '浏览器设置与扩展', link: '/efficiency/software/browser' },
           { text: 'Visual Studio Code 配置', link: '/efficiency/software/vscode' },
           { text: 'WebStorm 配置', link: '/efficiency/software/webstorm' },
