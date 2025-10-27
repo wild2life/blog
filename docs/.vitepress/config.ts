@@ -83,5 +83,12 @@ export default defineConfig({
 
   vite: {
     plugins: [MarkdownPreview()],
+     css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
   },
 })
