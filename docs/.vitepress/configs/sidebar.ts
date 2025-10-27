@@ -14,7 +14,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '引用类型的拷贝', link: '/fe/javascript/clone' },
         { text: '类型转换', link: '/fe/javascript/conversions' },
         { text: '原型和原型链', link: '/fe/javascript/prototype' },
-        { text: '继承', link: '/fe/javascript/inherit' }
+        { text: '继承', link: '/fe/javascript/inherit' },
+        { text: 'this', link: '/fe/javascript/this' }
       ]
     },
     {
