@@ -16,10 +16,14 @@ export default defineConfig({
   head,
   lastUpdated: true,
   cleanUrls: true,
+  ignoreDeadLinks: 'localhostLinks',
 
   /* markdown 配置 */
   markdown: {
     lineNumbers: true,
+    image: {
+      lazyLoading: true,
+    },
   },
 
   /* 主题配置 */
@@ -40,7 +44,7 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/wild2life/blog' }],
 
     footer: {
-      message: '转载自 maomao1996',
+      message: '转载或 CV 自 maomao1996',
       copyright: 'Copyright © 2019-present maomao',
     },
 
