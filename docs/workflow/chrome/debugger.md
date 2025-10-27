@@ -1,88 +1,216 @@
-[developers](https://developers.google.com/web/tools/chrome-devtools/?hl=zh-cn)
-Open Chrome DevTools
-Ctrl+Shift+I (Windows) 或 Cmd+Opt+I (Mac)
+# chrome debugger 技巧
 
-## console.log({})
+- [developers](https://developers.google.com/web/tools/chrome-devtools/?hl=zh-cn)
+- Open Chrome DevTools `Ctrl+Shift+I` (Windows) 或 `Cmd+Opt+I` (Mac)
+
+## 🔥 console
+
+### ✅ console.log({})
 
 在使用 console.log();的时候，不仅仅打印变量，而是要打印对象，用大括号({})将变量包围起来。这样的优点是不仅会把变量的值打印，同时还会将变量名打印出来。
-![](https://cdn.nlark.com/yuque/0/2020/png/292785/1607917242655-d693f0ce-9779-4d02-a987-e9cb03d67fe0.png#height=330&id=sCa6T&originHeight=330&originWidth=1014&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=1014)
 
-## console.table
+### ✅ `console.table` 格式化数据
 
-使用 console.table 来打印多条目数据
-![](https://cdn.nlark.com/yuque/0/2020/png/292785/1607917242720-dc89e7ca-69de-49e8-b794-dcb951ef005f.png#height=646&id=LcsTU&originHeight=646&originWidth=2558&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=2558)
+打印数组或对象时，console.table() 比 console.log() 直观得多：
 
-## $0
-
-如果你想引用某个 DOM 元素，使用$0。$0 指向你当前在 Element 中选中的元素。如果指定了$0，$1 指向之前选中的元素。以此类推，直到$4 都可以使用。
-
-## getEventListeners()
-
-getEventListeners(domElement) 返回在 DOM 元素上注册的所有的事件。请看下面的例子：
-
-![](https://cdn.nlark.com/yuque/0/2020/gif/292785/1607917242792-c89d12be-4541-49cd-a655-ee863c53459e.gif#height=391&id=YKrRQ&originHeight=391&originWidth=673&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=673)
-
-## 复制 JavaScript 变量 copy(obj)
-
-copy(anything) 是一个很有用的工具函数方便你将任何东西拷贝到系统的粘贴板暂存。
-给 copy 函数传入一个没有格式的 JSON，会返回格式化的结果：
-![](https://cdn.nlark.com/yuque/0/2020/gif/292785/1607917242933-36947c55-06d1-4263-912f-eebc5b34b9f7.gif#height=705&id=GNcOh&originHeight=705&originWidth=1213&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=1213)
-
-## 暂停 UI 在 Hover 状态下的展示结果
-
-我们很难去检查一个只有在 Hover 状态下展示的元素。比如，如何去检查一个 tooltip？如果你右键并选择检查，元素已经消失了。那么有办法吗？
-(1)打开 sources 面板
-(2)显示 tooltip
-(3)使用快捷键来暂停脚本执行(将鼠标停留在暂停的图标上查看快捷键)
-(4)回到 Elements 面板，然后像通常一样去检查元素
-![](https://cdn.nlark.com/yuque/0/2020/gif/292785/1607917244001-126ce8ca-0ac6-4000-9f25-d8b5c487fc51.gif#height=566&id=CmVgd&originHeight=566&originWidth=1056&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=1056)
-
-## breakPoint
-
-[使用断点暂停代码](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints?hl=zh-cn)
-
-## **$i**直接在控制台安装 npm 包
-
-[Console Importer](https://link.juejin.cn/?target=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fconsole-importer%2Fhgajpakhafplebkdljleajgbpdmplhie%2Frelated) 就是这么一个插件，用来在控制台直接安装**npm**包。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/292785/1654571103353-aece2262-4836-4a81-a426-c966cd117a0e.png#clientId=uc14f4d5d-c842-4&from=paste&height=719&id=u280ff3ae&name=image.png&originHeight=719&originWidth=1304&originalType=binary&ratio=1&rotation=0&showTitle=false&size=256843&status=done&style=none&taskId=u22880a3b-1f8b-4fe2-88e3-0b06f4d8360&title=&width=1304)
-
-## 快速切换主题
-
-1. **cmd + shift + p** 执行**Command**命令
-2. 输入**Switch to dark theme**或者**Switch to light theme**进行主题切换
-
-## **$\_**控制台引用上一次执行的结果
-
-使用**$\_**引用上一次操作的结果，不用每次都复制一遍
-
-```
-// 第1步'fatfish'.split('') // ['f', 'a', 't', 'f', 'i', 's', 'h']
-// 第2步 $_.reverse() // ['h', 's', 'i', 'f', 't', 'a', 'f']
-// 第3步 $_.join('') // hsiftaf
+```js
+const users = [
+  { name: "Alice", age: 25, city: "北京" },
+  { name: "Bob", age: 30, city: "上海" }
+];
+console.table(users);
 ```
 
-## 截取一张全屏的网页
+ 📌效果：以表格形式显示数据，方便查看。
 
-1. 准备好需要截屏的内容
-2. **cmd + shift + p** 执行**Command**命令
-3. 输入**Capture full size screenshot** 按下回车
+### ✅ `$0 - $4` 快捷访问 DOM
 
-## 在控制台快速发起请求
+- $0 代表 Elements 面板中选中的元素。
+- $1 - $4 代表最近访问过的 4 个元素。
 
-还是联调或修 BUG 的场景，针对同样的请求，有时候需要**修改入参**重新发起，有啥快捷方式？
+```js
+$0.style.border = "2px solid red"; // 给选中的元素加红色边框
+```
 
-1. 选中**Network**
-2. 点击**Fetch/XHR**
-3. 选择**Copy as fetch**
-4. 控制台粘贴代码
-5. 修改参数，回车搞定
+### ✅ 复制对象到剪贴板
 
-## 一键重新发起请求
+```js
+copy({ name: "Alice", age: 25 });
+```
 
-在与后端接口联调或排查线上 BUG 时，你是不是也经常听到他们说这句话：**你再发起一次请求试试，我这边看下为啥出错了！**
-重发请求，这有一种简单到发指的方式
+📌 用途：快速复制 JSON 数据，粘贴到其他地方（如 VS Code）。
+
+### ✅ `monitorEvents()` 监听 DOM 事件
+
+```js
+monitorEvents(document.body, "click");
+
+```
+
+📌 用途：查看所有 click 事件，适用于调试事件监听。
+
+停止监听：
+
+```js
+unmonitorEvents(document.body, "click");
+
+```
+
+### ✅ `$_`控制台引用上一次执行的结果
+
+```js
+'wildlife'.split('')  // ['w', 'i', 'l', 'd', 'l', 'i', 'f', 'e']
+$_.reverse() // ['e', 'f', 'i', 'l', 'd', 'l', 'i', 'w']
+$_.join('') // 'e,f,i,l,d,l,i,w'
+```
+
+## 🎨 Elements 面板技巧
+
+### ✅ 快速修改 CSS
+
+双击元素 直接编辑 HTML。
+双击 CSS 样式 立即修改，无需刷新页面。
+按住 Alt + 鼠标滚轮 可以调整数值大小（如 margin: 10px）。
+
+### ✅ 在 Console 选中某个元素
+
+```js
+$x("//button[text()='登录']")   // 通过 XPath 选中按钮
+document.querySelector("button") // 通过 CSS 选择器
+```
+
+📌 用途：在 Console 里快速操作页面元素。
+
+## 🌍 Network 面板技巧
+
+### ✅ 复制 API 请求
+
+在 Network 面板：
+右键点击请求 → Copy as cURL
+在终端执行 curl 命令，快速复现请求：
+
+```sh
+curl 'https://api.example.com/data' -H 'Authorization: Bearer abc123'
+
+```
+
+📌 用途：调试 API 请求，模拟请求数据。
+
+### ✅ 一键重新发起请求
 
 1. 选中**Network**
 2. 点击**Fetch/XHR**
 3. 选择要重新发送的请求
 4. 右键选择**Replay XHR**
+
+### ✅ 拦截并修改 API 响应
+
+1. 右键请求 → Edit and Resend
+2. 修改 Header 或 Body，然后重新发送请求。
+
+📌 用途：测试不同参数对 API 的影响。
+
+### ✅ 模拟慢网速
+
+1. Network → No throttling
+2. 选择 Slow 3G / Fast 3G
+
+📌 用途：测试网页在低网速下的加载情况。
+
+## ⚡ Performance 面板优化
+
+### ✅ 分析页面性能
+
+1. 打开 `Performance` 面板 → 点击 `Record`
+2. 录制页面加载过程 → 找到耗时的任务（红色区域）
+
+📌 用途：查找影响页面性能的代码，如 layout shifts 和 render blocking。
+
+## 🔍 Sources 面板技巧
+
+### ✅ 断点调试 JavaScript
+
+1. 右键行号 → `Add breakpoint`
+
+2. 代码执行到该行时会暂停，你可以：
+
+- Step over (F10) 跳过当前函数
+- Step into (F11) 进入函数内部
+- Step out (Shift + F11) 退出函数
+
+📌 用途：查找 bug，比 console.log() 更高效。
+
+### ✅ 在控制台修改 JavaScript 变量
+
+在断点调试时，可以直接修改变量：
+
+```js
+someVariable = "新值";
+
+```
+
+📌 用途：实时修改代码逻辑，验证不同变量的影响。
+
+### ✅ 暂停 UI 在 Hover 状态下的展示结果
+
+我们很难去检查一个只有在 Hover 状态下展示的元素。比如，如何去检查一个 tooltip？如果你右键并选择检查，元素已经消失了。那么有办法吗？
+
+1. 打开 `sources` 面板
+2. 显示 `tooltip`
+3. 使用快捷键来暂停脚本执行(将鼠标停留在暂停的图标上查看快捷键)
+4. 回到 Elements 面板，然后像通常一样去检查元素
+
+## 🎭 Lighthouse 进行网站性能分析
+
+在 Lighthouse 面板：
+
+1. 选择 Performance、SEO、Accessibility 选项
+2. 点击 Generate Report
+
+📌 用途：自动分析网站的加载速度、可访问性、SEO 等问题。
+
+## 🔥 Application 面板技巧
+
+### ✅ 清理 Local Storage / Cookies
+
+- Local Storage：右键 Clear
+- Cookies：右键 Delete
+📌 用途：清理缓存，测试登录状态。
+
+### ✅ 直接修改 Local Storage
+
+```js
+localStorage.setItem("token", "abc123");
+
+```
+
+📌 用途：模拟用户登录状态，无需重复输入密码。
+
+## 🚀 Bonus：隐藏/修改页面内容
+
+### ✅ 一键隐藏广告
+
+```js
+document.querySelectorAll(".ad-banner").forEach(el => el.style.display = "none");
+
+```
+
+📌 用途：隐藏烦人的广告，专注调试页面。
+
+### ✅ 修改网站文字
+
+```js
+document.body.innerHTML = document.body.innerHTML.replace(/旧文字/g, "新文字");
+
+```
+
+📌 用途：修改页面内容，测试多语言适配。
+
+## 🎯 开发者必备 Chrome 扩展
+
+| **扩展名** | **功能** |
+|-----------|---------|
+| [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/) | React 组件调试 |
+| [Vue.js DevTools](https://chrome.google.com/webstore/detail/vuejs-devtools/) | Vue 组件调试 |
+| [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/) | JSON 格式化 |
+| [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/) | 网站性能优化 |

@@ -210,6 +210,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ]
     },
     {
+      text: '布局与样式',
+      collapsed: false,
+      items: [
+        { text: '边框', link: '/workflow/layout/border' },
+        { text: '进度条', link: '/workflow/layout/progress' },
+        { text: '文字特效', link: '/workflow/layout/effects/text' }
+      ] 
+    },
+    {
       text: 'Vue 相关',
       link: '/workflow/vue/'
     },

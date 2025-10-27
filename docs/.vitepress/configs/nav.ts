@@ -64,7 +64,7 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/workflow/style-guide',
       },
       {
-        text: '开发小技巧',
+        text: 'Tailwind CSS 使用与配置',
         link: '/workflow/tricks/index'
       },
       {
@@ -86,6 +86,10 @@ export const nav: DefaultTheme.Config['nav'] = [
       {
         text: 'Tailwind CSS 使用与配置',
         link: '/workflow/library/tailwindcss',
+      },
+      {
+        text: '文字特效',
+        link: '/workflow/layout/effects/text',
       },
       {
         text: 'Vue 小技巧',

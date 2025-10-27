@@ -483,6 +483,7 @@ brew install --cask rectangle
 长按 `Command` 即可查看当前应用的快捷键提示
 
 - [软件官网](https://www.ergonis.com/products/keycue/)
+- [安装包](https://github.com/maomao1996/software-backup/tree/main/mac/CheatSheet)
 
 ## 显示器控制 MonitorControl
 
@@ -513,21 +514,38 @@ brew install --cask monitorcontrol
 brew install --cask betterdisplay
 ```
 
-::: tip 操作方法 - 以 BetterDisplay v1.4.15 为例
+### 使用方法
+
+> 以 BetterDisplay v3.5.6 为例
 
 1. 下载 - 安装 - 打开
 2. 点击导航栏小图标
 3. 点击面板最下面的设置按钮
-   1. 点击『`Display`』
+   1. 点击『`显示器 ｜ Display`』
    2. 选择扩展显示器
-   3. 勾选『`Edit the system configuration of this display`』
+   3. 勾选『`编辑此显示器型号的系统配置 ｜ Edit the system configuration of this display`』
    4. 添加自定义分辨率（可选）
       1. 勾选『『`Add custom scaled resolutions`』
-      2. 设置自己需要的分辨率（如 `1600x900` ）
-   5. 修改 Default resolution 选项
-      1. 勾选『`Edit default resolution`』
-      2. 设置自己需要的分辨率（如 `1920x1080@60` ）
+      2. 设置自己需要的分辨率（如 `2048×1152` ）
+   5. 修改 `默认分辨率 ｜ Default resolution` 选项
+      1. 勾选『`编辑默认分辨率 ｜ Edit default resolution`』
+      2. 设置自己需要的分辨率（如 `2048×1152@60` ）
 4. 保存并应用设置（设置完以后可关闭软件，不需要一直开着）
+
+::: details 常用的自定义分辨率
+
+**2K 屏**
+
+- `1600×900 HiDPI`
+- `1920×1080 HiDPI`
+- `2048×1152 HiDPI` （我的默认分辨率）
+
+**4K 屏**
+
+- `1920×1080 HiDPI`
+- `2560×1440 HiDPI`
+- `3008×1692 HiDPI`
+- `3200×1800 HiDPI`
 
 :::
 
