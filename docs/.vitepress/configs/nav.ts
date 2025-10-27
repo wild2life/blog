@@ -64,10 +64,6 @@ export const nav: DefaultTheme.Config['nav'] = [
         link: '/workflow/style-guide',
       },
       {
-        text: 'Tailwind CSS 使用与配置',
-        link: '/workflow/tricks/index'
-      },
-      {
         // text: '常用工具/方法',
         items: [
           { text: '常用正则整理', link: '/workflow/utils/regexp' },

@@ -348,6 +348,11 @@ export const DATA: NavData[] = [
         title: 'monaco-editor',
         desc: '微软开源的基于 VSCode 的代码编辑器。支持智能提示、代码高亮、代码格式化等',
         link: 'https://github.com/microsoft/monaco-editor'
+      },
+        {
+        title: 'codemirror',
+        desc: 'CodeMirror 是一个面向网页的代码编辑器组件。CodeMirror 6 采用模块化设计，性能更好，可组合性更强。',
+        link: 'https://github.com/codemirror/dev/'
       }
     ]
   },
