@@ -80,3 +80,28 @@ description: '收录一些能提升使用体验的浏览器扩展、油猴脚本
 ### 打开不安全网页
 
 在当前页面任意地方点击，直接输入 `thisisunsafe` 后回车就能访问
+
+### 重新启用 Manifest V2 扩展
+
+> 以 138.0.7204.158（正式版本） (arm64) 为例
+
+- 打开 `chrome://flags/`
+- 修改如下配置项
+  - **修改 `Temporarily unexpire M137 flags.` 为 `Enabled`**
+  - **修改 `Extension Manifest V2 Deprecation Warning Stage` 为 `Disabled`**
+  - **修改 `Extension Manifest V2 Deprecation Disabled Stage` 为 `Disabled`**
+  - **修改 `Extension Manifest V2 Deprecation Unsupported Stage` 为 `Disabled`**
+  - **修改 `Allow legacy extension manifest versions` 为 `Enabled`**
+- 重启浏览器
+
+::: info 快捷跳转地址
+
+- `chrome://flags/#temporary-unexpire-flags-m137`
+- `chrome://flags/#extension-manifest-v2-deprecation-warning`
+- `chrome://flags/#extension-manifest-v2-deprecation-disabled`
+- `chrome://flags/#extension-manifest-v2-deprecation-unsupported`
+- `chrome://flags/#allow-legacy-mv2-extensions`
+
+:::
+
+![重新启用 Manifest V2 扩展](./images/chrome-manifestv2-flags.png)
