@@ -41,7 +41,7 @@ export default defineConfig({
       label: '目录',
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/wild2life/blog' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/wild2life' }],
 
     footer: {
       message: '转载或 CV 自 maomao1996',

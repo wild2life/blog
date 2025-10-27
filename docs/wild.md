@@ -14,8 +14,8 @@ aside: false
 # 濑户 <Badge text="wild2life" />
 
 ```sh:no-line-numbers
-我的理想永不坠落
-                                -- 一个想躺平的小开发
+一边喝咖啡一边看报错，一边修bug，一边记笔记。写着写着就变成生活随笔了
+                              
 ```
 
 **About:**
