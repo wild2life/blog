@@ -1,14 +1,14 @@
 {
-  "name": "您的网站名称",
-  "short_name": "短名称",
+  "name": "濑户内海",
+  "short_name": "濑户",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/blog/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/blog/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
