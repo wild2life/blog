@@ -1,6 +1,6 @@
 # 濑户内海
 
-- 前端物语
+- 进击的前端
   - JavaScript
   - HTML
   - CSS

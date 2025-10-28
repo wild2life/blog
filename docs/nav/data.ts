@@ -81,13 +81,13 @@ export const NAV_DATA: NavData[] = [
     title: '站点导航',
     items: [
       {
-        icon: '/logo.jpg',
+        icon: '/book.png',
         title: '前端日常笔记',
         desc: '日常笔记记录',
         link: 'https://github.com/wild2life/daily-notes',
       },
       // {
-      //   icon: '/logo.jpg',
+      //   icon: '/logo.png',
       //   title: '前端思维导图',
       //   desc: '用思维导图的方式总结个人所学知识',
       //   link: 'https://mindmap.fe-mm.com',

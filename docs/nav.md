@@ -1,5 +1,5 @@
 ---
-description: 前端导航是由濑户制作并收录了大量高质量前端相关站点，为前端开发工程师提供最简单便捷的网址导航服务
+description: 开发者罗盘是由濑户制作并收录了大量高质量前端相关站点，为前端开发工程师提供最简单便捷的网址导航服务
 layoutClass: m-nav-layout
 outline: [2, 3, 4]
 ---
@@ -8,7 +8,7 @@ outline: [2, 3, 4]
 import MNav from './nav/MNav.vue'
 </script>
 
-# 前端导航
+# 开发者罗盘
 
 ::: info 本站其他导航
 

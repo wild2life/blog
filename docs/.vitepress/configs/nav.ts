@@ -1,9 +1,9 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const nav: DefaultTheme.Config['nav'] = [
-  { text: '导航', link: '/nav', activeMatch: '^/nav' },
+  { text: '开发者罗盘', link: '/nav', activeMatch: '^/nav', },
   {
-    text: '前端物语',
+    text: '进击的前端',
     items: [
       { text: 'JavaScript 基础知识', link: '/fe/javascript/types' },
       { text: 'CSS 理论知识点', link: '/fe/css/' },
@@ -136,7 +136,7 @@ export const nav: DefaultTheme.Config['nav'] = [
     activeMatch: '^/daily-notes|pit'
   },
   {
-    text: '提效工具',
+    text: '我的武器库',
     items: [
       {
         text: '软件推荐与配置',

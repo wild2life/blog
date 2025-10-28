@@ -30,7 +30,7 @@ export default defineConfig({
   themeConfig: {
     i18nRouting: false,
 
-    logo: '/logo.jpg',
+    logo: '/cat.png',
 
     nav,
     sidebar,

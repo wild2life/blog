@@ -1,5 +1,5 @@
 ---
-description: '前端物语：记录一些面试需要的 HTML 理论知识点'
+description: '进击的前端：记录一些面试需要的 HTML 理论知识点'
 ---
 
 # HTML 理论知识点

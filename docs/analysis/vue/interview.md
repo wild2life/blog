@@ -260,7 +260,7 @@ configureWebpack: {
 export default {
     data() {
         return {
-            logo:require("assets/images/logo.jpg"),
+            logo:require("assets/images/logo.png"),
         };
     }
 };
@@ -909,7 +909,7 @@ configureWebpack: {
 export default {
     data() {
         return {
-            logo:require("assets/images/logo.jpg"),
+            logo:require("assets/images/logo.png"),
         };
     }
 };

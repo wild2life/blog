@@ -94,6 +94,7 @@ description: '收录一些实用的在线工具，免去下载软件的烦恼'
 - [在线 PS | 稿定设计](https://ps.gaoding.com)
 - [Photo Editor: BeFunky](https://www.befunky.com/create/) 免费在线照片编辑器（支持中文）
 - [Edit•Photo](https://edit.photo) 免费在线照片编辑器
+- [ResizePixel](https://www.resizepixel.com/download) 可精确输入尺寸（如 24×24）并支持裁剪
 
 ### 在线抠图
 
@@ -118,6 +119,9 @@ description: '收录一些实用的在线工具，免去下载软件的烦恼'
   - [Star Charts](https://starchart.cc/) 数据更详细
   - [Star history](https://star-history.t9t.io/) 手绘风格
 - [Notion 风格头像制作](https://notion-avatar.vercel.app/zh)
+- [Sweezy Cursors](https://sweezy-cursors.com/) 免费可爱风鼠标光标网站，提供 `.cur` / `.png` 下载
+- [RW Designer](https://www.rw-designer.com/) 光标与图标编辑器，可在线制作 `.cur` / `.ico` 文件，支持上传自定义图像生成光标
+- [favicon.io](https://favicon.io/) 在线生成 favicon 图标，支持文字、Emoji、图片三种模式
 
 ## 作图工具
 
