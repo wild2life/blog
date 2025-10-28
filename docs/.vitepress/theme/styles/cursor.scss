@@ -1,7 +1,7 @@
 body {
-  cursor: url('/cursor.cur'), auto;
+  cursor: url('/cur/cursor.cur'), auto;
 }
 
 a:hover {
-  cursor: url('/cursor-hover.cur'), pointer;
+  cursor: url('/cur/cursor-hover.cur'), pointer;
 }

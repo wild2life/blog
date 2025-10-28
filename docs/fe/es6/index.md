@@ -1,5 +1,5 @@
 ---
-description: '前端物语：ES6 常用知识的学习笔记'
+description: '进击的前端：ES6 常用知识的学习笔记'
 ---
 
 # ES6 常用知识

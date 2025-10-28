@@ -1,5 +1,5 @@
 ---
-description: '前端物语：TypeScript 基础知识的学习笔记'
+description: '进击的前端：TypeScript 基础知识的学习笔记'
 ---
 
 # TypeScript 基础知识

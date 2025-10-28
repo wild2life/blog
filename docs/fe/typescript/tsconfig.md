@@ -1,5 +1,5 @@
 ---
-description: '前端物语：TypeScript 编译配置的学习笔记'
+description: '进击的前端：TypeScript 编译配置的学习笔记'
 ---
 
 # TypeScript 编译配置
