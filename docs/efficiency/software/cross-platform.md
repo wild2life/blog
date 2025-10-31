@@ -94,3 +94,20 @@ brew install --cask sourcetree
 ```
 
 [软件官网](https://www.sourcetreeapp.com/)
+
+
+## 截图贴图工具 Ksnip 🖼️
+
+1. 一款跨平台截图注释工具，功能非常接近 Snipaste
+2. 支持截图、标注、马赛克、模糊、文字等
+3. 支持多平台（Windows / macOS / Linux）
+4. 可将截图固定为浮动窗口（Pin Screenshot）
+5. 自定义快捷键与自动保存
+6. 支持 Wayland 与 X11 环境
+
+### linux
+```sh
+sudo apt update
+sudo apt install ksnip
+```
+- [Ksnip | Github](https://github.com/ksnip/ksnip)
