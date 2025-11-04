@@ -102,6 +102,7 @@ export const nav: DefaultTheme.Config['nav'] = [
       },
       { text: 'Git 相关技巧', link: '/workflow/git/' },
       { text: 'Git 命令清单', link: '/workflow/git/command' },
+      { text: 'Git 实战场景', link: '/workflow/git/advanced' },
       {
         items: [
           { text: 'chrome debugger', link: '/workflow/chrome/debugger' },
